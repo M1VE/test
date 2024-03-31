@@ -558,3 +558,12 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_yc1x4")
+
+[node name="Camera2D" type="Camera2D" parent="." groups=["player"]]
+zoom = Vector2(2.5, 2.5)
+limit_left = -440
+limit_top = -320
+limit_right = 480
+limit_bottom = 240
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
