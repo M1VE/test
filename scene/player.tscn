@@ -549,7 +549,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_yc1x4"]
 radius = 5.09902
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_qleru")
 inv = ExtResource("2_aj4rj")
 
@@ -563,7 +563,7 @@ position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_yc1x4")
 
 [node name="Camera2D" type="Camera2D" parent="." groups=["player"]]
-zoom = Vector2(2.5, 2.5)
+zoom = Vector2(3, 3)
 limit_left = -440
 limit_top = -320
 limit_right = 480
